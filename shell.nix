@@ -6,8 +6,9 @@ mkShell {
     toolchain
     pkg-config
     rust-analyzer-unwrapped
+    dbus
   ];
   shellHook = '' 
-    RUST_SRC_PATH = "${toolchain}/lib/rustlib/src/rust/library";
+    RUST_SRC_PATH="${toolchain}/lib/rustlib/src/rust/library";
   '';
 }
